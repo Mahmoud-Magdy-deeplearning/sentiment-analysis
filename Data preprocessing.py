@@ -4,15 +4,9 @@ import re                                    # library for regular expression op
 import string                                # for string operations
 import nltk                                  # NLP toolbox
 from nltk.corpus import twitter_samples 
-from nltk.corpus import stopwords            # module for stop words that come with NLTK
-from nltk.stem import PorterStemmer          # module for stemming
-from nltk.tokenize import TweetTokenizer     # module for tokenizing strings
-import matplotlib.pyplot as plt              # Library for visualization
 import numpy as np                           # Library for math functions
 from utils import process_tweet              # Import the process_tweet function
 from utils import process_tweet, build_freqs # Our functions for NLP
-from utils import process_tweet, build_freqs # import our convenience functions
-nltk.download('stopwords')                   # download the stopwords for the process_tweet function
 
 class preprocessing:
 
@@ -62,4 +56,4 @@ class preprocessing:
         return freqs 
         
     def get_freqs_table():
-        return data #used for plotting
+        return data
